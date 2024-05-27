@@ -6,7 +6,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 export default function FormSearch() {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
     let [loadSearch, setLoadSearch] = useState(false);
     let [search, setSearch] = useState('');
     let [items, setItems] = useState([]);
@@ -45,7 +45,7 @@ export default function FormSearch() {
       <div className="position-relative z-3">
         <input 
           onInput={handleSearch}
-          onBlur={() => setItems([])}
+          // onBlur={() => setItems([])}
           ref={textSearch}
           className="form-control me-2" type="text" placeholder="Tìm kiếm" />
         <IoIosSearch

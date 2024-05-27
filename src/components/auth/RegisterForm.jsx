@@ -114,7 +114,7 @@ export default function RegisterForm() {
                     <div className="col-sm-6 mb-3 mb-sm-0">
                       <input
                           {...register('password')}
-                          type="text"
+                          type="password"
                           className={`form-control form-control-user ${errors.password?.message ? 'is-invalid' : ''}`}
                           placeholder="Password..." />
                       <div className="invalid-feedback">
@@ -124,7 +124,7 @@ export default function RegisterForm() {
                     <div className="col-sm-6">
                       <input
                           {...register('password_confirm')}
-                          type="text"
+                          type="password"
                           className={`form-control form-control-user ${errors.password_confirm?.message ? 'is-invalid' : ''}`}
                           placeholder="Password Confirm..." />
                       <div className="invalid-feedback">

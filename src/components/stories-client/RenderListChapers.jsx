@@ -7,7 +7,7 @@ export default function RenderListChapers({type, slugChaper, storyId, slugStory}
     let [chapers, setChapers] = useState([]);
     useEffect(()=>{
         getData();
-      }, []);
+      }, [storyId]);
     let getData = async () => {
         let response = await axios.get(
             `${URL_API.baseApiUrl}chapers/?story_id=${storyId}`

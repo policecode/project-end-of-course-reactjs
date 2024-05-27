@@ -15,7 +15,7 @@ export default function DetailStory() {
 
     useEffect(() => {
         getData();
-    }, []);
+    }, [params.slug]);
     useEffect(() => {
         document.title = itemDetail.title;
     }, [itemDetail])

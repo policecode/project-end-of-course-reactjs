@@ -26,7 +26,7 @@ export default function CommentStory({ storyId }) {
         return () => {
             // clearInterval(commentInterval);
         }
-    }, []);
+    }, [storyId]);
     const { register, watch, handleSubmit, setValue, getValues, formState: { errors }, reset } = useForm({
         mode: 'onBlur',
         resolver: yupResolver(schema),
