@@ -126,6 +126,11 @@ export default function LoginForm() {
                         Create an Account!
                       </Link>
                     </div>
+                    <div className="text-center">
+                      <Link to={"/"} className="small">
+                        Home
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>

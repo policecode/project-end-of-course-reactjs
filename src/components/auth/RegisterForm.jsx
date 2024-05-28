@@ -156,6 +156,11 @@ export default function RegisterForm() {
                     Already have an account? Login!
                   </Link>
                 </div>
+                <div className="text-center">
+                  <Link to={"/"} className="small">
+                    Home
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
