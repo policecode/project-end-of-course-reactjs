@@ -36,7 +36,7 @@ export default function LoginForm() {
      */
     dispatch(loadingSlice.actions.loadingShow());
     let response = await axios.get(`${URL_API.baseApiUrl}users?email=${values.email}&password=${values.password}`);
-    if (response.data.length > 0) {
+    if (response?.data?.length > 0) {
       // Login success
       toast.success("Đăng nhập thành công!", {
         position: "top-center",
