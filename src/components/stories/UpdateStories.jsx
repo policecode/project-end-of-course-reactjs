@@ -178,7 +178,7 @@ export default function UpdateStories(props) {
                           --- Trạng Thái ---
                         </option>
                         <option value="Đang ra">Đang ra</option>
-                        <option value="Đang ra">Hoàn Thành</option>
+                        <option value="Full">Hoàn Thành</option>
                       </select>
                       <div className="invalid-feedback">
                         {errors.status?.message}

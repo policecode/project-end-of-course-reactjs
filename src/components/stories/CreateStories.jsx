@@ -125,7 +125,7 @@ export default function CreateStories() {
                 className={`form-select ${errors.status?.message ? 'is-invalid' : ''}`}>
                 <option value="" disabled>--- Trạng Thái ---</option>
                 <option value="Đang ra">Đang ra</option>
-                <option value="Đang ra">Hoàn Thành</option>
+                <option value="Full">Hoàn Thành</option>
               </select>
               <div className="invalid-feedback">
                 {errors.status?.message}

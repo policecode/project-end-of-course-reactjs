@@ -251,7 +251,7 @@ export default function StoriesList() {
                     </td>
                     <td>{item.title}</td>
                     <td>{item.author}</td>
-                    <td>{item.status}</td>
+                    <td>{item.status == 'Full' ? 'Hoàn Thành': item.status}</td>
                     <td>{item.updated_at}</td>
                     <td>
                       <Link
